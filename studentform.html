@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            padding: 8px;
+        }
+        table{
+            border-collapse: collapse;
+            margin-left: 90px;
+            margin-top: -22px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+        th,td{
+            padding: 6px;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        label{
+            display: inline-block;
+            width: 80px;
+            margin-bottom: 10px;
+        }
+        div{
+            background-color: paleturquoise;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h3 style="text-align: center;"> Student Registration From</h3>
+    <div>
+    <from>
+        <label for="Fisrt Name">First Name</label>
+        <input id="First Name" name="First Name">(Max 30 character a-z and A-Z )
+        <br>
+        <label for="Last Name">Last Name </label>
+        <input id="Last Name" name="Last Name">(Max 30 character a-z and A-Z)
+        <br>
+        <label for="DOB">Date Of Birth</label>
+        <input type="date" id="DOB" name="DOB">
+        <br>
+        <label for="Email">Email</label>
+        <input type="email" id="Email">
+        <br>
+        <label for="Mo_Number">Mobile Number</label>
+        <input type="number" id="Mo_/number">(10 Digit Number)
+        <br>
+        <label for="Gender"> Gender</label>
+        <input type="radio" id="male_yes" name="Gender">Male
+        <input type="radio" id="female_yes" name="Gender">Female
+        <br>
+        <label for="Address">Address</label>
+        <textarea></textarea>
+        <br>
+        <label for="City">City</label>
+        <input type="text" id="City">(Max 30 character a-z and A-Z )
+        <br>
+        <label for="Picode">Pincode </label>
+        <input type="text" id="Pincode">(6 Digit Number)
+        <br>
+        <label for="State">State </label>
+        <input type="text" id="State">(Max 30 character a-z and A-Z )
+        <br>
+        <label for="Country">Country</label>
+        <input value="India" id="Country">
+        <br>
+        <label for="Hobbies"> Hobbies</label>
+        <input type="checkbox" name="Hobbies_1" id="Hobbies_1">Drawing
+        <input type="checkbox" name="Hobbies_2" id="Hobbies_1">Singing
+        <input type="checkbox" name="Hobbies_3" id="Hobbies_1">Dancing
+        <input type="checkbox" name="Hobbies_4" id="Hobbies_1">sketching
+        <br>
+        <input type="checkbox" name="Hobbies_1" id="Hobbies_1">Other
+        <input>
+        <br>
+        <br>
+        <label for="Qualification">Qualification</label>
+        <table>
+            <tr>
+                <th>SI.No</th>
+                <th>Examination</th>
+                <th>Board</th>
+                <th>Percantage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Class X</td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Class XII</td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Graduation</td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Masters</td>
+                <td><input></td>
+                <td><input></td>
+                <td><input></td>
+            </tr>
+        </table>
+        <label for="Courses">Courses Applied for</label>
+        <input type="radio" name="Courses_1" id="Courses">BCA
+        <input type="radio" name="Courses_2" id="Courses">B.COM
+        <input type="radio" name="Courses_3" id="Courses">B.Sc
+        <input type="radio" name="Courses_4" id="Courses">BA
+        <br>
+        <p style="text-align: center;">
+        <input type="submit" value="Submit">
+        <input type="submit" value="Reset">
+        </p>
+        </from> 
+        </div>
+</body>
+</html>
