@@ -20,7 +20,69 @@
       type="image/x-icon"
     />
     <style>
-     
+      h2{
+        color: rgb(254, 3, 3);
+      }
+      a:hover{
+        color: red;
+        background-color: white;
+        border-radius: 3px;
+      }
+      p{
+        color: rgb(50, 10, 250);
+      }
+      .centralized {
+        text-align: center;
+        color: black;
+      }
+      #navbar-top{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+      }
+      #navbar-top {
+        position: sticky;
+        top: 0;
+        background: white;
+        padding: 15px 30px;
+      }
+
+      #navbar-top nav {
+        display: flex;
+        gap: 40px;
+      }
+
+      #navbar-top a {
+        color: black;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+      #navbar-top a:hover {
+        background: lightcoral;
+        color: #003366;
+      }
+      .chatbot-logo {
+        position: fixed;
+        bottom: 0px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .chatbot-logo:hover {
+        transform: scale(1.05);
+        position: fixed;
+        bottom: 0px; 
+      }
     </style>
   </head>
   <body>
@@ -28,16 +90,16 @@
 
     <header id="navbar-top">
       <nav>
-        <a href="#sub-heading-1">1. Topics</a> <br />
-        <a href="#sub-heading-2">2. Topics</a> <br />
-        <a href="#sub-heading-3">3. Topics</a> <br />
-        <a href="#sub-heading-4">4. Topics</a> <br />
-        <a href="#sub-heading-5">5. Topics</a> <br />
+        <a href="#sub-heading-1">Fees</a> <br />
+        <a href="#sub-heading-2">Admission</a> <br />
+        <a href="#sub-heading-3">Placement</a> <br />
+        <a href="#sub-heading-4">Programs</a> <br />
+        <a href="#sub-heading-5">Facilities</a> <br />
       </nav>
     </header>
 
     <main>
-      <h2 class="centralized">About Us - Parul University</h2>
+      <h2 class="centralized" style="color: red;">About Us - Parul University</h2>
 
       <img
         src="https://www.paruluniversity.ac.in/wp-content/uploads/2025/07/Main-gate-wide-photo-EDITED-scaled-e1752558962381.jpg"
@@ -248,10 +310,13 @@
               >Click Here</a
             >
           </p>
-        </div>
+          </div>
       </div>
     </main>
 
     <footer></footer>
+    <a href ="#boxmodel.html" class="chatbot-logo">
+      <img src="https://s.yimg.com/fz/api/res/1.2/.e4pqkcNYvvczJTfm2TkKQ--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/be/f2/aa/bef2aad7a1e299b87eefea11756b16df.jpg" alt="Chatbot" class="chatbot-logo">
+      </a>
   </body>
 </html>
