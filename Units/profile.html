@@ -1,186 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
     <style>
-        *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-body{
-    background: white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
+        body {
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-.card{
-    width:320px;
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,.18);
-    text-align:center;
-}
+        .card {
+            width: 320px;
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .18);
+            text-align: center;
+        }
 
-.top-bg{
-    height:130px;
-    background:#3d73f3;
-}
+        .top-bg {
+            height: 130px;
+            background: #3d73f3;
+        }
 
-.profile{
-    margin-top:-58px;
-}
+        .profile {
+            margin-top: -58px;
+        }
 
-.profile img{
-    width:115px;
-    height:115px;
-    border-radius:50%;
-    border:5px solid #fff;
-    object-fit:cover;
-    box-shadow:0 3px 10px rgba(0,0,0,.2);
-}
+        .profile img {
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            object-fit: cover;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
+        }
 
-.content{
-    padding:15px 20px 22px;
-}
+        .content {
+            padding: 15px 20px 22px;
+        }
 
-.content h2{
-    font-size:30px;
-    font-weight:700;
-    color:#222;
-    margin-top:5px;
-}
+        .content h2 {
+            font-size: 30px;
+            font-weight: 700;
+            color: #222;
+            margin-top: 5px;
+        }
 
-.content p{
-    font-size:17px;
-    color:#666;
-    margin-top:6px;
-}
+        .content p {
+            font-size: 17px;
+            color: #666;
+            margin-top: 6px;
+        }
 
-.social{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin:22px 0;
-}
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 22px 0;
+        }
 
-.social a{
-    width:42px;
-    height:42px;
-    border-radius:50%;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:18px;
-}
+        .social a {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-.facebook{
-    background:#4267B2;
-}
+        .facebook {
+            background: #4267B2;
+        }
 
-.twitter{
-    background:#1DA1F2;
-}
+        .twitter {
+            background: #1DA1F2;
+        }
 
-.instagram{
-    background:#E1306C;
-}
+        .instagram {
+            background: #E1306C;
+        }
 
-.youtube{
-    background:#FF0000;
-}
+        .youtube {
+            background: #FF0000;
+        }
 
-.buttons{
-    display:flex;
-    justify-content:center;
-    gap:18px;
-    margin-bottom:25px;
-}
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
 
-.buttons button{
-    width:120px;
-    height:42px;
-    border:none;
-    border-radius:25px;
-    background:#3d73f3;
-    color:#fff;
-    font-size:16px;
-    cursor:pointer;
-    transition:.3s;
-}
+        .buttons button {
+            width: 120px;
+            height: 42px;
+            border: none;
+            border-radius: 25px;
+            background: #3d73f3;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .3s;
+        }
 
-.buttons button:hover{
-    background:#2559d6;
-}
+        .buttons button:hover {
+            background: #2559d6;
+        }
 
-.bottom{
-    display:flex;
-    justify-content:space-between;
-    font-size:17px;
-    color:#444;
-    border-top:1px solid #eee;
-    padding-top:18px;
-}
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            font-size: 17px;
+            color: #444;
+            border-top: 1px solid #eee;
+            padding-top: 18px;
+        }
 
-.bottom span{
-    display:flex;
-    align-items:center;
-    gap:6px;
-}
+        .bottom span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
 
-.bottom i{
-    color:#666;
-}
+        .bottom i {
+            color: #666;
+        }
     </style>
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-<div class="card">
+    <div class="card">
 
-    <div class="top-bg"></div>
+        <div class="top-bg"></div>
 
-    <div class="profile">
-                <img src="https://images.openai.com/static-rsc-4/amx5Dn3q82wTajC94M9cseHs9lvp7u5tSNOIGebz2l3OxJUQwvQfKa2DXZc1flzUCuJIaivuDy6GudXnucjyOjmXnRmDHAx7yCM3LgcO12g2mgq-rX-_aE2lr4BM5g2Sk6c5PaG2NuYDuiIwSFyrNGtI83Egx3BhhP0ovqlTzOEvOR7xZdABWUBP2uOn0TwW?purpose=fullsize" alt="Profile Image" width="150">
+        <div class="profile">
+            <img src="https://images.openai.com/static-rsc-4/amx5Dn3q82wTajC94M9cseHs9lvp7u5tSNOIGebz2l3OxJUQwvQfKa2DXZc1flzUCuJIaivuDy6GudXnucjyOjmXnRmDHAx7yCM3LgcO12g2mgq-rX-_aE2lr4BM5g2Sk6c5PaG2NuYDuiIwSFyrNGtI83Egx3BhhP0ovqlTzOEvOR7xZdABWUBP2uOn0TwW?purpose=fullsize"
+                alt="Profile Image" width="150">
+
+        </div>
+
+        <div class="content">
+            <h2>Codinglab</h2>
+            <p>YouTuber & Blogger</p>
+
+            <div class="social">
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="buttons">
+                <button>Subscribe</button>
+                <button>Message</button>
+            </div>
+
+            <div class="bottom">
+                <span><i class="far fa-heart"></i> 60.4k</span>
+                <hr>
+                <span><i class="far fa-comment"></i> 20k</span>
+                <hr>
+                <span><i class="fas fa-share"></i> 12.4k</span>
+            </div>
+
+        </div>
 
     </div>
-
-    <div class="content">
-        <h2>Codinglab</h2>
-        <p>YouTuber & Blogger</p>
-
-        <div class="social">
-            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-        </div>
-
-        <div class="buttons">
-            <button>Subscribe</button>
-            <button>Message</button>
-        </div>
-
-        <div class="bottom">
-            <span><i class="far fa-heart"></i> 60.4k</span><hr>
-            <span><i class="far fa-comment"></i> 20k</span><hr>
-            <span><i class="fas fa-share"></i> 12.4k</span>
-        </div>
-
-    </div>
-
-</div>
 
 </body>
+
 </html>
