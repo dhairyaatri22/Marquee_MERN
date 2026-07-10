@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .card {
+            flex: 1;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin-top: 18px;
+            font-size: 30px;
+            color: #222;
+        }
+
+        .card p {
+            margin-top: 12px;
+            font-size: 17px;
+            color: #666;
+            line-height: 28px;
+        }
+
+        .choose {
+            text-align: center;
+        }
+
+        .choose h1 {
+            font-size: 55px;
+            color: #5d63a5;
+            font-weight: 300;
+        }
+
+        .underline {
+            width: 70px;
+            height: 4px;
+            background: #f15a24;
+            margin: 18px auto 60px;
+        }
+
+        .choose-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box {
+            flex: 1;
+            padding: 20px;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .box:last-child {
+            border-right: none;
+        }
+
+        .box i {
+            font-size: 55px;
+            color: #bfbfbf;
+            margin-bottom: 20px;
+        }
+
+        .box h4 {
+            color: #f15a24;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .box h2 {
+            color: #ef3c23;
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .box p {
+            color: #666;
+            font-size: 17px;
+            line-height: 28px;
+        }
+
+
+        @media (max-width:768px) {
+
+            .services {
+                flex-direction: column;
+            }
+
+            .choose-container {
+                flex-direction: column;
+            }
+
+            .box {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .box:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="services">
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYi_hgKseQL5z2IowwAn2MG1UVSLJHX8OFkXvyZqtHLg&s=10"
+                    alt="">
+                <h3>Kitchen Remodels</h3>
+                <p>Transform your kitchen into a modern, functional, and stylish space. We provide high-quality
+                    remodeling services with custom designs, premium materials, and expert craftsmanship to match your
+                    lifestyle..</p>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXr1MXzSv1ixFM1Sof3C3Pznu4P7USmW6hKjM14wGfg&s=10"
+                    alt="">
+                <h3>Windows & Doors</h3>
+                <p>Upgrade your home with durable, energy-efficient windows and doors. Our professional installation
+                    enhances security, improves insulation, and adds lasting beauty to your property.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwd5Zom0LB9OJ54dDAJVrWcvkRBI_ur8PB37MCBQcTnQ&s=10"
+                    alt="">
+                <h3>Decks & Porches</h3>
+                <p>Create the perfect outdoor living area with beautifully designed decks and porches. We build strong,
+                    attractive spaces that are ideal for relaxing, entertaining, and enjoying every season.</p>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <div class="container">
+
+        <section class="choose">
+
+            <h1>Why Choose Us</h1>
+
+            <div class="underline"></div>
+
+            <div class="choose-container">
+
+                <div class="box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>We have</h4>
+                    <h2>2</h2>
+                    <p>Central locations in Gujarat</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-regular fa-comments"></i>
+                    <h4>Over</h4>
+                    <h2>95%</h2>
+                    <p>Of students would recommend us</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-regular fa-id-card"></i>
+                    <h4>We are</h4>
+                    <h2>100%</h2>
+                    <p>Accredited by the Government</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                    <h4>We have a</h4>
+                    <h2>95%</h2>
+                    <p>Exam Pass Rate</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
