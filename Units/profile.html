@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
+    <title>Profile Card - BEM</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -14,14 +18,15 @@
         }
 
         body {
-            background: white;
+            background: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
-        .card {
+        /* Block */
+        .profile-card {
             width: 320px;
             background: #fff;
             border-radius: 18px;
@@ -30,16 +35,17 @@
             text-align: center;
         }
 
-        .top-bg {
+        /* Elements */
+        .profile-card__header {
             height: 130px;
             background: #3d73f3;
         }
 
-        .profile {
+        .profile-card__image {
             margin-top: -58px;
         }
 
-        .profile img {
+        .profile-card__image img {
             width: 115px;
             height: 115px;
             border-radius: 50%;
@@ -48,31 +54,31 @@
             box-shadow: 0 3px 10px rgba(0, 0, 0, .2);
         }
 
-        .content {
+        .profile-card__content {
             padding: 15px 20px 22px;
         }
 
-        .content h2 {
+        .profile-card__title {
             font-size: 30px;
             font-weight: 700;
             color: #222;
             margin-top: 5px;
         }
 
-        .content p {
+        .profile-card__subtitle {
             font-size: 17px;
             color: #666;
             margin-top: 6px;
         }
 
-        .social {
+        .profile-card__social {
             display: flex;
             justify-content: center;
             gap: 15px;
             margin: 22px 0;
         }
 
-        .social a {
+        .profile-card__social-link {
             width: 42px;
             height: 42px;
             border-radius: 50%;
@@ -84,30 +90,31 @@
             font-size: 18px;
         }
 
-        .facebook {
+        /* Modifiers */
+        .profile-card__social-link--facebook {
             background: #4267B2;
         }
 
-        .twitter {
+        .profile-card__social-link--twitter {
             background: #1DA1F2;
         }
 
-        .instagram {
+        .profile-card__social-link--instagram {
             background: #E1306C;
         }
 
-        .youtube {
+        .profile-card__social-link--youtube {
             background: #FF0000;
         }
 
-        .buttons {
+        .profile-card__buttons {
             display: flex;
             justify-content: center;
             gap: 18px;
             margin-bottom: 25px;
         }
 
-        .buttons button {
+        .profile-card__button {
             width: 120px;
             height: 42px;
             border: none;
@@ -119,67 +126,103 @@
             transition: .3s;
         }
 
-        .buttons button:hover {
+        .profile-card__button:hover {
             background: #2559d6;
         }
 
-        .bottom {
+        .profile-card__footer {
             display: flex;
             justify-content: space-between;
-            font-size: 17px;
-            color: #444;
+            align-items: center;
             border-top: 1px solid #eee;
             padding-top: 18px;
+            font-size: 17px;
+            color: #444;
         }
 
-        .bottom span {
+        .profile-card__stat {
             display: flex;
             align-items: center;
             gap: 6px;
         }
 
-        .bottom i {
+        .profile-card__icon {
             color: #666;
         }
-    </style>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        .profile-card__divider {
+            width: 1px;
+            height: 20px;
+            background: #ddd;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="card">
+    <div class="profile-card">
 
-        <div class="top-bg"></div>
+        <div class="profile-card__header"></div>
 
-        <div class="profile">
+        <div class="profile-card__image">
             <img src="https://images.openai.com/static-rsc-4/amx5Dn3q82wTajC94M9cseHs9lvp7u5tSNOIGebz2l3OxJUQwvQfKa2DXZc1flzUCuJIaivuDy6GudXnucjyOjmXnRmDHAx7yCM3LgcO12g2mgq-rX-_aE2lr4BM5g2Sk6c5PaG2NuYDuiIwSFyrNGtI83Egx3BhhP0ovqlTzOEvOR7xZdABWUBP2uOn0TwW?purpose=fullsize"
-                alt="Profile Image" width="150">
-
+                alt="Profile Image">
         </div>
 
-        <div class="content">
-            <h2>Codinglab</h2>
-            <p>YouTuber & Blogger</p>
+        <div class="profile-card__content">
 
-            <div class="social">
-                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            <h2 class="profile-card__title">CodingLab</h2>
+            <p class="profile-card__subtitle">YouTuber & Blogger</p>
+
+            <div class="profile-card__social">
+                <a href="#"
+                    class="profile-card__social-link profile-card__social-link--facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#"
+                    class="profile-card__social-link profile-card__social-link--twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <a href="#"
+                    class="profile-card__social-link profile-card__social-link--instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#"
+                    class="profile-card__social-link profile-card__social-link--youtube">
+                    <i class="fab fa-youtube"></i>
+                </a>
             </div>
 
-            <div class="buttons">
-                <button>Subscribe</button>
-                <button>Message</button>
+            <div class="profile-card__buttons">
+                <button class="profile-card__button">Subscribe</button>
+                <button class="profile-card__button">Message</button>
             </div>
 
-            <div class="bottom">
-                <span><i class="far fa-heart"></i> 60.4k</span>
-                <hr>
-                <span><i class="far fa-comment"></i> 20k</span>
-                <hr>
-                <span><i class="fas fa-share"></i> 12.4k</span>
+            <div class="profile-card__footer">
+
+                <span class="profile-card__stat">
+                    <i class="far fa-heart profile-card__icon"></i>
+                    60.4k
+                </span>
+
+                <hr class="profile-card__divider">
+
+                <span class="profile-card__stat">
+                    <i class="far fa-comment profile-card__icon"></i>
+                    20k
+                </span>
+
+                <hr class="profile-card__divider">
+
+                <span class="profile-card__stat">
+                    <i class="fas fa-share profile-card__icon"></i>
+                    12.4k
+                </span>
+
             </div>
 
         </div>
