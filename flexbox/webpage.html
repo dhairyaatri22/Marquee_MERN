@@ -19,25 +19,23 @@
         }
 
         .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 60px auto;
-            border: 3px solid #ddd;
-        }
-        .containers {
-            width: 90%;
-            max-width: 1200px;
-            margin: 60px auto;
-        }
 
+        }
+        
         .services {
             display: flex;
             justify-content: space-between;
             gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+            margin: 60px auto;
         }
 
         .card {
             flex: 1;
+            border: 1px solid #dddddd;
+            border-collapse: collapse;
+            border-radius: 6px;
         }
 
         .card img {
@@ -61,6 +59,10 @@
 
         .choose {
             text-align: center;
+            width: 100%;
+            background: #fafafa;
+            padding: 70px 20px;
+            border-top: 1px solid #dddddd;
         }
 
         .choose h1 {
@@ -79,10 +81,11 @@
         .choose-container {
             display: flex;
             justify-content: space-between;
-        }
-        .choose-containers {
-            display: flex;
-            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            border: 1px solid #e0e0e0;
+            background-color: #fafafa;
         }
 
         .box {
@@ -120,7 +123,7 @@
         }
 
 
-        @media (max-width:768px) {
+        /* @media (max-width:768px) {
 
             .services {
                 flex-direction: column;
@@ -138,13 +141,13 @@
             .box:last-child {
                 border-bottom: none;
             }
-        }
+        } */
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+  
 
         <section class="services">
 
@@ -175,11 +178,11 @@
 
         </section>
 
-    </div>
 
 
 
-    <div class="containers">
+
+
 
         <section class="choose">
 
@@ -221,7 +224,6 @@
 
         </section>
 
-    </div>
 
 </body>
 
