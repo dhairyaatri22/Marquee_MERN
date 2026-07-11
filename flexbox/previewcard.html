@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f8fc;
+        }
+
+        .testimonial-section {
+
+            width: 100%;
+            padding: 70px 40px;
+            text-align: center;
+        }
+
+        .testimonial-section h1 {
+
+            font-size: 52px;
+            color: #22439a;
+            font-weight: bold;
+        }
+
+        .subtitle {
+
+            margin-top: 18px;
+            color: #555;
+            font-size: 20px;
+            margin-bottom: 60px;
+        }
+
+        .testimonial-container {
+
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+
+            width: 360px;
+            background: #fff;
+            border-radius: 20px;
+            padding: 35px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+        }
+
+        .quote-box {
+
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 78px;
+            height: 78px;
+
+            background: #2d73ff;
+
+            border-bottom-left-radius: 70px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quote-box i {
+
+            color: white;
+            font-size: 28px;
+        }
+
+        .testimonial-card h2 {
+
+            margin-top: 10px;
+            color: #26468d;
+            font-size: 28px;
+        }
+
+        .testimonial-card h4 {
+
+            margin-top: 10px;
+            color: #ff7043;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .stars {
+
+            margin: 22px 0;
+            color: #ffc107;
+            font-size: 24px;
+            letter-spacing: 4px;
+        }
+
+        .testimonial-card p {
+
+            color: #555;
+            font-size: 20px;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+        @media(max-width:1150px) {
+
+            .testimonial-container {
+
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .testimonial-card {
+
+                width: 90%;
+                max-width: 450px;
+            }
+
+        }
+
+        @media(max-width:600px) {
+
+            .testimonial-section h1 {
+
+                font-size: 35px;
+            }
+
+            .subtitle {
+
+                font-size: 16px;
+            }
+
+            .testimonial-card {
+
+                padding: 25px;
+            }
+
+            .testimonial-card p {
+
+                font-size: 17px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="testimonial-section">
+
+        <h1>What Our Clients Say</h1>
+
+        <p class="subtitle">
+            Read what our satisfied clients have to say about working with QASSERT
+        </p>
+
+        <div class="testimonial-container">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+
+                <div class="quote-box">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+
+                <h2>John Miller</h2>
+
+                <h4>Software Architect</h4>
+
+                <div class="stars">
+                    ★ ★ ★ ★ ★
+                </div>
+
+                <p>
+                    QAssert provided exceptional software testing support,
+                    ensuring our product was released bug-free and on schedule.
+                    Their attention to detail and professional approach made
+                    them a great partner.
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="quote-box">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+
+                <h2>Samantha Turner</h2>
+
+                <h4>Product Manager</h4>
+
+                <div class="stars">
+                    ★ ★ ★ ★ ★
+                </div>
+
+                <p>
+                    Working with Qassert was a great experience. Their team quickly
+                    identified critical issues, suggested improvements, and ensured
+                    our product met the highest quality standards. Highly
+                    recommended!
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="quote-box">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+
+                <h2>Michael Johnson</h2>
+
+                <h4>Tech Lead</h4>
+
+                <div class="stars">
+                    ★ ★ ★ ★ ★
+                </div>
+
+                <p>
+                    QAssert's thorough testing saved us time and resources.
+                    Their test reports were comprehensive and actionable,
+                    helping us maintain product quality. Looking forward
+                    to more collaborations!
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
