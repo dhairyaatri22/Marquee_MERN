@@ -1,0 +1,54 @@
+body {
+        font-family: Arial, sans-serif;
+        
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th,
+      tr {
+        border: 1px solid rgb(15, 16, 15);
+        padding: 7px;
+        border-collapse: collapse;
+      }
+      tr {
+        padding: 7px;
+      }
+      th {
+        background-color: darkgray;
+        color:black;
+        padding: 14px;
+        transition: 0.2s;
+      }
+
+      th:hover {
+        background-color: #4b6db5;
+        cursor: pointer;
+        transform: scale(1.02);
+      }
+
+      caption {
+        caption-side: top;
+        font-size: 20px;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 20px;
+      }
+      tbody tr:hover {
+        background-color: gray;
+        transform: scale(1.01);
+        transition: 0.2s;
+        cursor: pointer;
+      }
+
+      td[rowspan] {
+        font-weight: bold;
+        color: #1e40af;
+      }
+      tfoot:hover{
+        cursor: pointer;
+        background-color: gray;
+        transition: 0.2s;
+        transform: scale(1.01);
+      }

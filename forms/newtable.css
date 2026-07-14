@@ -1,0 +1,39 @@
+body {
+            font-family: Arial, sans-serif;
+            background: white;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #7ac943;
+            font-size: 22px;
+        }
+
+        table {
+            width: 850px;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 22px;
+            
+        }
+
+        th {
+            background: #7ac943;
+            color: #111;
+            padding: 12px;
+            font-weight: bold;
+            border: 3px solid #e8f6df;
+        }
+
+        td {
+            padding: 12px;
+            border: 3px solid #f1f1f1;
+            color: #444;
+            background: white;
+        }
+
+        td:first-child {
+            background: #7ac943;
+            color: #111;
+            font-weight: bold;
+        }

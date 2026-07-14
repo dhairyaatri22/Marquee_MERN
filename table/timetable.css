@@ -1,0 +1,24 @@
+  body {
+        font-family: Arial, sans-serif;
+        
+      }
+      table {
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td ,
+      th,
+      tr {
+        border: 1px solid rgb(15, 16, 15);
+        padding: 7px;
+        border-collapse: collapse;
+      }
+      tr {
+        padding: 7px;
+      }
+      th {
+        background-color: darkgray;
+        color:black;
+        padding: 14px;
+        transition: 0.2s;
+      }
